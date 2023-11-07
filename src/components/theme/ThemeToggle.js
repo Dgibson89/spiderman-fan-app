@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Button = styled.button`
   cursor: pointer;
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   background-color: ${({ theme }) => theme.buttonBackground};
   color: ${({ theme }) => theme.textColor};
