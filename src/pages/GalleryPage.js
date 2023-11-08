@@ -7,7 +7,7 @@ const publicKey = 'bf51c91e83159509987139cc4fcafffe';
 const privateKey = '29a56ccc916871a2cbc4b5ab1cfb219d36b3c5d6';
 const characterId = '1009610'; // Spider-Man's character ID
 const ts = new Date().getTime();
-const hash = md5(ts + privateKey + publicKey);
+const hash = md5(ts + privateKey + publicKey).toString();
 
 function GalleryPage() {
   const [images, setImages] = useState([]);
