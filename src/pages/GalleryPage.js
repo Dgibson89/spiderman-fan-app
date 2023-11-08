@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Carousel } from 'react-bootstrap';
-import md5 from 'crypto-js'; // You might need to install a library like md5 or crypto-js to generate the hash
+import md5 from 'crypto-js/md5'; // You might need to install a library like md5 or crypto-js to generate the hash
 
 const publicKey = 'bf51c91e83159509987139cc4fcafffe';
 const privateKey = '29a56ccc916871a2cbc4b5ab1cfb219d36b3c5d6';
@@ -43,15 +43,15 @@ function GalleryPage() {
   }
 
   return (
-    <Carousel>
+    <Carousel data-bs-theme="dark">
       {images.map((image, index) => (
-        <Carousel.Item key={index}>
-          <img
-            className="d-block w-100"
-            src={image}
-            alt="Spider-Man"
-          />
-        </Carousel.Item>
+        <Carousel.Item>
+        <img
+          className="d-block mx-auto"
+          src={image}
+          alt={`Slide ${index}`}
+        />
+      </Carousel.Item>
       ))}
     </Carousel>
   );
