@@ -1,5 +1,8 @@
 import React from "react";
+import { Accordion, AccordionItem, Container } from "react-bootstrap";
 import Stack from "react-bootstrap/Stack";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function HistoryPage() {
   const stanLeeImageUrl =
@@ -14,14 +17,27 @@ function HistoryPage() {
   };
 
   return (
-    <Stack gap={3}>
-      <h1 className="p-1">{stanLeeInfo.name}</h1>
-      <img className="p-1" src={stanLeeImageUrl} alt="Stan Lee" />
-      <p className="p-2">Lived: {stanLeeInfo.lifespan}</p>
-      <blockquote className="p-2">{`"${stanLeeInfo.quote}"`}</blockquote>
-      <p className="p-2">{stanLeeInfo.bio}</p>
-      {/* Additional content about the creation of Spider-Man */}
-    </Stack>
+    <Container>
+      <Row className="justify-content-center">
+        <Col xs={12} md={8} lg={6}>
+          <Stack gap={3}>
+            <Accordion>
+              <AccordionItem>
+                <Accordion.Header>
+                  <h1 className="p-1">{stanLeeInfo.name}</h1>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <img className="img-fluid p-1" src={stanLeeImageUrl} alt="Stan Lee" />
+                  <p className="p-2">Lived: {stanLeeInfo.lifespan}</p>
+                  <blockquote className="p-2">{`"${stanLeeInfo.quote}"`}</blockquote>
+                  <p className="p-2">{stanLeeInfo.bio}</p>
+                </Accordion.Body>
+              </AccordionItem>
+            </Accordion>
+          </Stack>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

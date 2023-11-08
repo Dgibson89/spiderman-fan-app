@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const NavigationBar = () => {
   return (
     
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" style={{ width: '100vw' }} >
       <Navbar.Brand as={Link} className='ps-2' to="/">
         Spiderman Hub
       </Navbar.Brand>

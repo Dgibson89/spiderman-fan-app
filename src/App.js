@@ -21,7 +21,7 @@ const App = () => {
   };
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}  breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
       <GlobalStyles />
       <ThemeToggle theme={theme} toggleTheme={themeToggler} />
       <NavigationBar />
