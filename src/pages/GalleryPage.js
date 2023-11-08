@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Carousel } from 'react-bootstrap';
 import "../styles/GalleryPageStyle.css"
-import md5 from 'crypto-js/md5'; // You might need to install a library like md5 or crypto-js to generate the hash
+import md5 from 'crypto-js/md5'; 
 
 const publicKey = 'bf51c91e83159509987139cc4fcafffe';
 const privateKey = '29a56ccc916871a2cbc4b5ab1cfb219d36b3c5d6';
@@ -24,13 +24,11 @@ function GalleryPage() {
           },
         });
 
-        // Assuming the image data is in the response.data.data.results[0].thumbnail path
-        // You might need to adjust this path depending on the actual structure of the response
         const imagePath = response.data.data.results[0].thumbnail.path;
         const imageExtension = response.data.data.results[0].thumbnail.extension;
-        const imageUrl = `${imagePath}/detail.${imageExtension}`; // Using 'portrait_incredible' for image size, refer to the documentation for other sizes
+        const imageUrl = `${imagePath}/detail.${imageExtension}`;
 
-        setImages([imageUrl]); // As we're just fetching one character, wrap the URL in an array for consistency with the state structure
+        setImages([imageUrl]); 
       } catch (error) {
         console.error('Error fetching images:', error);
       }
