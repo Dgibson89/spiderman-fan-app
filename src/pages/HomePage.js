@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Container } from "react-bootstrap";
 
 function HomePage() {
+  const constructionImageUrl =
+    "https://www.seekpng.com/png/detail/259-2598162_page-in-under-construction.png";
   return (
-    <div>HomePage</div>
-  )
+    <div>
+      <Container>
+        <img
+          className="img-fluid p-1"
+          src={constructionImageUrl}
+          alt="coming soon!"
+        />
+      </Container>
+    </div>
+  );
 }
 
-export default HomePage
+export default HomePage;
