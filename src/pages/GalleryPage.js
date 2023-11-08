@@ -27,7 +27,7 @@ function GalleryPage() {
         // You might need to adjust this path depending on the actual structure of the response
         const imagePath = response.data.data.results[0].thumbnail.path;
         const imageExtension = response.data.data.results[0].thumbnail.extension;
-        const imageUrl = `${imagePath}/portrait_incredible.${imageExtension}`; // Using 'portrait_incredible' for image size, refer to the documentation for other sizes
+        const imageUrl = `${imagePath}/detail.${imageExtension}`; // Using 'portrait_incredible' for image size, refer to the documentation for other sizes
 
         setImages([imageUrl]); // As we're just fetching one character, wrap the URL in an array for consistency with the state structure
       } catch (error) {
