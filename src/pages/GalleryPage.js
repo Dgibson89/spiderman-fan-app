@@ -15,7 +15,7 @@ function GalleryPage() {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get(`http://gateway.marvel.com/v1/public/characters/${characterId}`, {
+        const response = await axios.get(`https://gateway.marvel.com/v1/public/characters/${characterId}`, {
           params: {
             ts,
             apikey: publicKey,
