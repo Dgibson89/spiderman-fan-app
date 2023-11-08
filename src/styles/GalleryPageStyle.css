@@ -1,0 +1,9 @@
+
+  /* Responsive styles for screens that are 768px wide or less (like tablets and phones) */
+  @media (max-width: 768px) {
+    .carousel-image {
+      width: 90%; 
+      height: auto;
+    }
+  }
+  

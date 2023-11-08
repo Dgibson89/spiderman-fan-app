@@ -9,6 +9,7 @@ import ThemeToggle from './components/theme/ThemeToggle';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './components/theme/GlobalStyles';
 import { lightTheme, darkTheme } from './utils/themes';
+import Footer from './components/common/Footer';
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/media" element={<MediaPage />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 };

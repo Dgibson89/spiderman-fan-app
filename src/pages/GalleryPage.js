@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Carousel } from 'react-bootstrap';
+import "../styles/GalleryPageStyle.css"
 import md5 from 'crypto-js/md5'; // You might need to install a library like md5 or crypto-js to generate the hash
 
 const publicKey = 'bf51c91e83159509987139cc4fcafffe';
@@ -47,7 +48,7 @@ function GalleryPage() {
       {images.map((image, index) => (
         <Carousel.Item>
         <img
-          className="d-block mx-auto"
+          className="d-block mx-auto carousel-image"
           src={image}
           alt={`Slide ${index}`}
         />
