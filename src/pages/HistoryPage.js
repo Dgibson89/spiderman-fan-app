@@ -8,7 +8,7 @@ function HistoryPage() {
   const stanLeeImageUrl =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Stan_Lee_by_Gage_Skidmore_3.jpg/800px-Stan_Lee_by_Gage_Skidmore_3.jpg";
 
-  const spiderManImageUrl = ""
+  const spiderManImageUrl = "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2018/08/22/87a1ef74-6d37-4dc2-b334-ba5c725686e3/marvels-spider-man-screenshot"
 
 
   const stanLeeInfo = {
@@ -27,7 +27,7 @@ function HistoryPage() {
 
   return (
     <>
-    <Container>
+    <Container data-bs-theme="dark">
       <Row className="justify-content-center">
         <Col xs={12} md={8} lg={6}>
           <Stack gap={3}>
@@ -40,7 +40,7 @@ function HistoryPage() {
                   <img className="img-fluid p-1" src={stanLeeImageUrl} alt="Stan Lee" />
                   <p className="p-2">Lived: {stanLeeInfo.lifespan}</p>
                   <blockquote className="p-2">{`"${stanLeeInfo.quote}"`}</blockquote>
-                  <p className="p-2">Bio:{stanLeeInfo.bio}</p>
+                  <p className="p-2">Bio: {stanLeeInfo.bio}</p>
                 </Accordion.Body>
               </AccordionItem>
             </Accordion>
@@ -49,7 +49,7 @@ function HistoryPage() {
       </Row>
     </Container>
 
-<Container>
+<Container data-bs-theme="dark">
 <Row className="justify-content-center">
   <Col xs={12} md={8} lg={6}>
     <Stack gap={3}>
