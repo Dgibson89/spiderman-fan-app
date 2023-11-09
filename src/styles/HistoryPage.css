@@ -1,0 +1,10 @@
+.accordion-light .accordion-item {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.accordion-dark .accordion-item {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
