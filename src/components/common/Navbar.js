@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import ThemeContext from "../../utils/ThemeContext";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
 const NavigationBar = () => {
+
+  const { theme } = useContext(ThemeContext);
+
   return (
     
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" style={{ width: '100vw' }} >
+    <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme} sticky="top" >
       <Navbar.Brand as={Link} className='ps-2' to="/">
         Spiderman Hub
       </Navbar.Brand>
