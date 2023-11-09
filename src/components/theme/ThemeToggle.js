@@ -21,7 +21,7 @@ const Button = styled.button`
 const ThemeToggle = ({ theme, toggleTheme }) => {
   return (
     <Button onClick={toggleTheme}>
-      Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
+      {theme === 'light' ? 'Symbiote' : 'Classic'} Suit
     </Button>
   );
 };
