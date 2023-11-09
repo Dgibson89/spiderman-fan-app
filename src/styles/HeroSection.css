@@ -1,10 +1,18 @@
 .hero-section {
     width: 100%;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh; 
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease-in-out; /* Smooth transition for background change */
   }
   
+/* For the light theme */
+.text-shadow-light {
+  text-shadow: 2px 2px 2px #ffffff; /* White shadow */
+}
 
+/* For the dark theme */
+.text-shadow-dark {
+  text-shadow: 2px 2px 2px #000000; /* Black shadow */
+}
   
