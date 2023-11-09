@@ -12,6 +12,7 @@ const Button = styled.button`
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1rem;
+  z-index: 5;
 
   &:focus {
     outline: none;
@@ -20,7 +21,7 @@ const Button = styled.button`
 
 const ThemeToggle = ({ theme, toggleTheme }) => {
   return (
-    <Button onClick={toggleTheme}>
+    <Button onClick={toggleTheme} >
       {theme === 'light' ? 'Symbiote' : 'Classic'} Suit
     </Button>
   );

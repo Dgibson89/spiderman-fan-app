@@ -13,7 +13,7 @@ const NavigationBar = () => {
     
     <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme} sticky="top" >
       <Navbar.Brand as={Link} className='ps-2' to="/">
-        Spiderman Hub
+        Spider Hub
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"  className='me-2' />
       <Navbar.Collapse id="basic-navbar-nav" >
