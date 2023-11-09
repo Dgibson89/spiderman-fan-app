@@ -4,7 +4,6 @@ import HeroSection from "../components/common/HeroSection";
 import ThemeContext from "../utils/ThemeContext";
 
 function HomePage() {
-
   const { theme } = useContext(ThemeContext); // Use the context to get the theme
 
   const constructionImageUrl =
@@ -17,8 +16,8 @@ function HomePage() {
           src={constructionImageUrl}
           alt="coming soon!"
         />
-         <HeroSection theme={theme} />
       </Container>
+      <HeroSection theme={theme} />
     </div>
   );
 }
