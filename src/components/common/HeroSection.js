@@ -12,7 +12,7 @@ function HeroSection({ theme }) {
       className={`hero-section ${theme}`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      {/* Content of your hero section */}
+    {/* <p>Welcome to the Spider-Verse!</p> */}
     </div>
   );
 }
