@@ -14,12 +14,14 @@ function SignupModal({ showModal, closeModal }) {
     closeModal();
   };
 
+  const textColor = theme === 'light' ? '#0D47A1' : '#000';
+
   return (
-    <Modal show={showModal} onHide={closeModal} centered>
-      <Modal.Header closeButton>
-        <Modal.Title>Get Your Daily Dose of Spider-Facts!</Modal.Title>
+    <Modal  show={showModal} onHide={closeModal} centered>
+      <Modal.Header closeButton >
+        <Modal.Title style={{ color: textColor }}>Get Your Daily Dose of Spider-Facts!</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body style={{ color: textColor }}>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="emailSignup">
             <Form.Label>Email address</Form.Label>
@@ -30,12 +32,12 @@ function SignupModal({ showModal, closeModal }) {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <Form.Text className="text-muted">
+            <Form.Text className="text-muted" style={{ color: textColor }}>
               We'll never share your email with anyone else.
             </Form.Text>
           </Form.Group>
           <Button
-            variant={theme === "light" ? "outline-dark" : "outline-light"}
+            variant="outline-dark"
             type="submit"
           >
             Subscribe
