@@ -1,12 +1,12 @@
-Goals:
+Goals/Ideas:
 • Figure out how to have the modal appear once when site is visited. Maybe only appear until the user signs up?
 • Fix color scheme to actually Match the suit colors (Black/White/Greys) (Red/Blues/Whites)
-•
-•
-•
-•
-•
-•
+• Optimize history page. Map through all data with a single container for all items mapped?
+• Design Brands on Canva, Symbiote and Classic.
+• 
+• 
+• 
+• 
 
 
 
