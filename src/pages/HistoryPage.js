@@ -150,7 +150,7 @@ function HistoryPage() {
 
   return (
     <>
-      <Container data-bs-theme={theme === "light" ? "light" : "dark"}>
+      <Container id="padding" data-bs-theme={theme === "light" ? "light" : "dark"}>
         <Row className="justify-content-center">
           <Col xs={12} md={8} lg={6}>
             <Stack gap={3}>
@@ -176,7 +176,7 @@ function HistoryPage() {
         </Row>
       </Container>
 
-      <Container data-bs-theme={theme === "light" ? "light" : "dark"}>
+      <Container id="padding" data-bs-theme={theme === "light" ? "light" : "dark"}>
         <Row className="justify-content-center">
           <Col xs={12} md={8} lg={6}>
             <Stack gap={3}>
@@ -219,7 +219,7 @@ function HistoryPage() {
         </Row>
       </Container>
 
-      <Container data-bs-theme={theme === "light" ? "light" : "dark"}>
+      <Container id="padding" data-bs-theme={theme === "light" ? "light" : "dark"}>
         <Row className="justify-content-center">
           <Col xs={12} md={8} lg={6}>
             <Stack gap={3}>

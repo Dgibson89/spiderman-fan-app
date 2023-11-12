@@ -4,3 +4,7 @@
   object-fit: contain; /* Contain within the element without cropping */
   margin: auto; /* Center the image horizontally */
 }
+
+#padding {
+  padding: 1rem;
+}

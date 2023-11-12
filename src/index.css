@@ -14,10 +14,4 @@ body {
   flex: 1;
 }
 
-.footer {
-  width: 100%;
-  background: #f8f9fa; /* Example background color */
-  color: #6c757d; /* Example text color */
-  text-align: center;
-  padding: 10px 0; /* Example padding */
-}
+

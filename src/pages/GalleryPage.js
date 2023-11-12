@@ -50,7 +50,7 @@ function GalleryPage() {
   }
 
   return (
-    <Carousel data-bs-theme="dark">
+    <Carousel id="padding" data-bs-theme="dark">
       {images.map((image, index) => (
         <Carousel.Item key={index}>
           {" "}
