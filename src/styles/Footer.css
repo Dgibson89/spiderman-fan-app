@@ -1,8 +1,9 @@
-.footer {
-  width: 100%;
-}
-
-/* This class is added to ensure the footer sticks at the bottom */
-.sticky-footer {
-  margin-top: auto;
-}
+.footer-light {
+    background-color: #ffffff;
+    color: #000000; 
+  }
+  
+  .footer-dark {
+    background-color: #343a40;
+    color: #ffffff; 
+  }

@@ -20,7 +20,8 @@ const App = () => {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme: themeToggler }}>
+    <div id="root">
+    <ThemeContext.Provider classname="content" value={{ theme, toggleTheme: themeToggler }}>
       <ThemeProvider
         theme={theme === "light" ? lightTheme : darkTheme}
         breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
@@ -28,15 +29,18 @@ const App = () => {
         <GlobalStyles />
         <ThemeToggle theme={theme} toggleTheme={themeToggler} />
         <NavigationBar />
+  
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/media" element={<MediaPage />} />
         </Routes>
+        
         <Footer />
       </ThemeProvider>
     </ThemeContext.Provider>
+    </div>
   );
 };
 
