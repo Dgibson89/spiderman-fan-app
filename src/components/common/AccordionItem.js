@@ -2,7 +2,7 @@ import React from "react";
 import { Accordion } from "react-bootstrap";
 
 const AccordionItem = ({ info, imageUrl, accordionClassName }) => (
-  <Accordion.Item eventKey={info.name}>
+  <Accordion.Item eventKey={info.name} className={accordionClassName}>
     <Accordion.Header>
       <h1 className="p-1">{info.name}</h1>
     </Accordion.Header>
