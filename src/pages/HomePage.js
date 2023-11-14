@@ -7,13 +7,22 @@ import ThemeContext from "../utils/ThemeContext";
 function HomePage() {
   const { theme } = useContext(ThemeContext); // Use the context to get the theme
   const [showModal, setShowModal] = useState(true);
+  const [isMinimized, setIsMinimized] = useState(false);
 
-  const closeModal = () => setShowModal(false);
+  const closeModal = () => {
+    setShowModal(false);
+    setIsMinimized(true);
+  };
 
+  const openModal = () => {
+    setShowModal(true);
+    setIsMinimized(false);
+  };
   return (
     <div>
       <HeroSection theme={theme} />
-      <SignupModal showModal={showModal} closeModal={closeModal} />
+      {showModal && <SignupModal showModal={showModal} closeModal={closeModal} />}
+      {isMinimized && <button theme={theme} onClick={openModal}>Open Sign Up</button>}
     </div>
   );
 }
