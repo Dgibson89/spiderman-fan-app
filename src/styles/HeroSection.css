@@ -15,4 +15,20 @@
 .text-shadow-dark {
   text-shadow: 2px 2px 2px #000000; /* Black shadow */
 }
+
+.btn-placement {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  z-index: 5;
+}
   
+.custom-light-button {
+  background-color: #415d86;
+  color: black;
+  border: none;
+}
