@@ -27,6 +27,7 @@ function GalleryPage() {
   
         // Filter out the broken image. This assumes broken images have a specific path you can check
         // For example, if the broken image's path ends with 'image_not_available'
+        // Images that have 'coming soon' still show up
         const validImages = response.data.data.results.filter(comic => 
           !comic.thumbnail.path.endsWith('image_not_available')
         ).map(comic => {
