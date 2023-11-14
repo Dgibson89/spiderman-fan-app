@@ -23,7 +23,11 @@ function HomePage() {
     <div>
       <HeroSection theme={theme} />
       {showModal && <SignupModal showModal={showModal} closeModal={closeModal} />}
-      {isMinimized && <Button theme={theme} onClick={openModal}>Open Sign Up</Button>}
+      {isMinimized && (
+        theme === 'dark' ? 
+          <Button className="btn-placement" variant="dark" onClick={openModal}>Open Sign Up</Button> :
+          <Button className="custom-light-button btn-placement" onClick={openModal}>Open Sign Up</Button>
+      )}
     </div>
   );
 }
