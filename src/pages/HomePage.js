@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import Button from 'react-bootstrap/Button';
 import HeroSection from "../components/common/HeroSection";
 import SignupModal from "../components/common/SignupModal";
 import ThemeContext from "../utils/ThemeContext";
@@ -22,7 +23,7 @@ function HomePage() {
     <div>
       <HeroSection theme={theme} />
       {showModal && <SignupModal showModal={showModal} closeModal={closeModal} />}
-      {isMinimized && <button theme={theme} onClick={openModal}>Open Sign Up</button>}
+      {isMinimized && <Button theme={theme} onClick={openModal}>Open Sign Up</Button>}
     </div>
   );
 }
