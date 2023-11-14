@@ -2,6 +2,7 @@
     width: 100%;
     text-align: center;
     padding: 10px;
+    transition: background-color 0.5s ease-in-out;
   }
 
 .footer-light {
