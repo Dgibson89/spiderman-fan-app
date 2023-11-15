@@ -13,7 +13,7 @@ const AccordionItem = ({ info, imageUrl }) => {
         <h1 className="p-1">{info.name}</h1>
       </Accordion.Header>
       <Accordion.Body>
-        <img className="img-fluid p-1" src={imageUrl} alt={info.name} />
+        <img className="img-fluid p-1 w-90 " src={imageUrl} alt={info.name} />
         {info.lifespan && (
           <p className="p-2">
             <strong>Lived:</strong> {info.lifespan}

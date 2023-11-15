@@ -68,7 +68,7 @@ const characterData = [
 
   {
     name: "Spider-Man (Symbiote)",
-    imageUrl: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/01/spider-man-symbiote-perching.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5",
+    imageUrl: "https://www.pixground.com/wp-content/uploads/2023/10/Marvels-Spider-Man-2-Spider-Man-Venom-Symbiote-Suit-4K-Wallpaper-jpg.webp",
     powers: [
       "Enhanced Strength",
       "Enhanced Agility and Reflexes",
