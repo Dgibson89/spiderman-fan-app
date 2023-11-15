@@ -14,7 +14,7 @@ function HeroSection({ theme }) {
       className={`hero-section ${theme}`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <h1 className={textShadowClass}>
+      <h1 className={textShadowClass} id="padding">
         Swing Into the Spider-Verse: Your Ultimate Portal to All Things Spidey!
       </h1>
     </div>
