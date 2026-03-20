@@ -7,7 +7,7 @@ const Button = styled.button`
   bottom: 20px;
   right: 20px;
   background-color: ${({ theme }) => theme.buttonBackground};
-  color: ${({ theme }) => theme.textColor};
+  color: ${({ theme }) => theme.buttonText};
   border: none;
   border-radius: 5px;
   padding: 10px 20px;

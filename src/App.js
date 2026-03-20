@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import HistoryPage from "./pages/HistoryPage";
@@ -15,32 +15,43 @@ import Footer from "./components/common/Footer";
 const App = () => {
   const [theme, setTheme] = useState("dark");
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   const themeToggler = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   return (
-    <div id="root">
-    <ThemeContext.Provider classname="content" value={{ theme, toggleTheme: themeToggler }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme: themeToggler }}>
       <ThemeProvider
         theme={theme === "light" ? lightTheme : darkTheme}
         breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
       >
         <GlobalStyles />
-        <ThemeToggle theme={theme} toggleTheme={themeToggler} />
-        <NavigationBar />
-  
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/history" element={<HistoryPage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/media" element={<MediaPage />} />
-        </Routes>
-        
+        <div className="content">
+          <ThemeToggle theme={theme} toggleTheme={themeToggler} />
+          <NavigationBar />
+
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/history" element={<HistoryPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+            <Route path="/media" element={<MediaPage />} />
+          </Routes>
+        </div>
+
         <Footer />
       </ThemeProvider>
     </ThemeContext.Provider>
-    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 const characterData = [
   {
     name: "Stan Lee",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Stan_Lee_by_Gage_Skidmore_3.jpg/800px-Stan_Lee_by_Gage_Skidmore_3.jpg",
+    imageUrl: "https://www.rollingstone.com/wp-content/uploads/2018/11/stan-lee-dies-at-95-2018-Tribute-to-Stan-Lee.jpg?w=1581&h=1054&crop=1",
     lifespan: "1922–2018",
     powers: ["None...that he revealed..."],
     quote: "Excelsior!",

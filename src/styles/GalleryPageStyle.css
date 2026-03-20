@@ -1,10 +1,11 @@
 .carousel-image {
-  max-height: 85vh; /* 85% of the viewport height */
-  width: auto; /* Adjust width automatically */
-  object-fit: contain; /* Contain within the element without cropping */
-  margin: auto; /* Center the image horizontally */
+  max-height: 85vh;
+  width: auto;
+  object-fit: contain;
+  margin: auto;
 }
 
-#padding {
+.padding {
   padding: 1rem;
 }
+

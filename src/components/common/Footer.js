@@ -11,7 +11,9 @@ function Footer() {
   return (
     <footer className={`footer sticky-footer ${footerColorClass}`}>
       <div className="container">
-        <p>Data provided by Marvel. © 2014 Marvel</p>
+    <p className="footer-disclaimer">
+  Marvel characters and images are © Marvel. This is a non-commercial fan application.
+</p>
       </div>
     </footer>
   );

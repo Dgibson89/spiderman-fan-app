@@ -14,3 +14,9 @@
     background-color: #363637;
     color: #ffffff; 
   }
+  
+  .footer-disclaimer {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 5px;
+}

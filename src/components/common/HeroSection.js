@@ -10,15 +10,17 @@ function HeroSection({ theme }) {
     theme === "light" ? "text-shadow-light" : "text-shadow-dark";
 
   return (
-    <div
-      className={`hero-section ${theme}`}
-      style={{ backgroundImage: `url(${imageUrl})` }}
-    >
-      <h1 className={textShadowClass} id="padding">
+  <div
+    className={`hero-section ${theme}`}
+    style={{ backgroundImage: `url(${imageUrl})` }}
+  >
+    <div className="hero-content">
+      <h1 className={textShadowClass}>
         Swing Into the Spider-Verse: Your Ultimate Portal to All Things Spidey!
       </h1>
     </div>
-  );
+  </div>
+);
 }
 
 export default HeroSection;
