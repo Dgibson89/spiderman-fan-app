@@ -1,91 +1,115 @@
-Goals/Ideas:
-• Figure out how to have the modal appear once when site is visited. Maybe only appear until the user signs up?
-• Fix color scheme to actually Match the suit colors (Black/White/Greys) (Red/Blues/Whites)
-• Optimize history page. Map through all data with a single container for all items mapped?
-• Design Brands on Canva, Symbiote and Classic.
-• 
-• 
-• 
-• 
+# 🕷️ Spider Hub
 
+A modern, responsive React application celebrating the Spider-Verse.  
+Spider Hub delivers an immersive fan experience with dynamic theming, character exploration, and a polished UI.
 
+---
 
+## 🚀 Features
 
+- 🎨 **Dynamic Theme System**
+  - Toggle between Classic and Symbiote themes
+  - Theme persistence using localStorage
+  - Themed backgrounds and UI styling
 
+- 🖼️ **Gallery Experience**
+  - Local image-based carousel for fast and reliable performance
+  - No external API dependency
 
+- 📖 **Character History**
+  - Accordion-based layout for exploring Spider-Man lore
+  - Clean, responsive design for readability
 
+- 🎬 **Hero Section**
+  - Cinematic background switching based on theme
+  - Gradient overlay for improved readability
 
+- 📱 **Responsive Design**
+  - Built with Bootstrap and custom styling
+  - Works across desktop and mobile devices
 
+---
 
+## 🏗️ Tech Stack
 
+**Frontend**
+- React
+- React Router
+- Styled-Components
+- Bootstrap
 
-# Getting Started with Create React App
+**State Management**
+- React Context API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 📁 Project Structure
 
-In the project directory, you can run:
+```
+src/
+├── assets/images        # Theme and gallery images
+├── components/
+│   ├── common          # Reusable UI components
+│   └── theme           # Theme-related components
+├── data                # Static character data
+├── pages               # Route-based pages
+├── styles              # CSS files
+├── utils               # Theme context and configuration
+├── App.js
+├── index.js
+```
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Installation & Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone the repository:
 
-### `npm test`
+```bash
+git clone https://github.com/your-username/spiderman-fan-app.git
+cd spiderman-fan-app
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies:
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧠 Key Improvements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Removed external Marvel API dependency for stability
+- Implemented local image-based gallery
+- Added persistent theme state using localStorage
+- Improved UI consistency across light and dark themes
+- Enhanced accessibility and readability
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⚠️ Disclaimer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Marvel characters and images are © Marvel.  
+This is a non-commercial fan project created for educational and portfolio purposes.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💡 Future Enhancements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Page transition animations
+- Expanded character database
+- Search and filtering functionality
+- Backend integration for dynamic content
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👨‍💻 Author
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Donovan Gibson
